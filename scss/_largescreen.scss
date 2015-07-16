@@ -1,0 +1,56 @@
+//_largecreen.scss
+
+// large screens
+@media only screen and (min-width: 64.063em) {
+
+
+.optin1-btn {
+  font-size: calc(30px);
+}
+
+img.bg{
+    min-width: 1024px;
+}
+
+
+[class*="block-grid-"] {
+  margin: 0 10rem;
+}
+
+
+p.ribbon {
+	font-size: 29px;
+}
+
+.rectangle-list2 li{
+    
+   
+
+}
+
+
+
+/*------section 3 grid -----*/
+
+.section3BlockGrid{
+  h2{
+	font-size: 27px;
+	letter-spacing: normal;
+  }
+
+  .section3GridItem {
+  
+  min-height: 630px;
+}
+
+}
+
+
+.mbgText
+  {
+  padding-top: 30px;
+  }
+
+
+
+  } /* min-width 641px, medium screens */

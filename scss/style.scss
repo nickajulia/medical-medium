@@ -1,195 +1,30 @@
 
 /*Style.scss*/
 
-@import 'foundation';
+@import 'bootstrap/_bootstrap.scss';
 
 
 
 /* variables
 ---------------------------------------------------------- */
 
+$headerBgStart:#061B4D;
+$headerBgEnd: #283D7A ;
+$contentRightBg:#DFDEE2;
+$contentRightTextColor:#071C4F;
+$quoteBg:#DFDEE1;
 
-/*--- BG colors--*/
-$headerBgColor:transparent;
-$overlay: #00000A;
-$grey: #656564;
-$grey2: #383838;
-$grey3: #383837;
-$greyBlue:#A9ABAD;
-$lightGrey: #D8D8D8;
-$grey-hover:#999;
-$yellow: rgba(255, 189, 14, 1);
-$lightblue: #7DCEEC;
-$white: #ffffff;
-$box: rgba(0,0,0,0.15);
-$faBlue: #2E5884;
-$black: #000001;
-$bulletTop:#4FA5FF;
-$bulletBtm:#0068D9;
-
-/*--- Buttons--*/
-
-$optinWrapBg:#f3f3f3;
-$optinWrapBorder:#e5e4e4;
-$buttonColor2:#ec8737;
-$buttonColor2Hover:#ec8736;
-$buttonColor2Border:#c38348;
-$buttonColor2BorderHover:#c38348;
-
-
-/*--- Block Grid --*/
-$block-grid-elements: 12;
-$block-grid-default-spacing: rem-calc(0);
-
-
-
-/*--- Bullet Lists--*/
-$headerBullets:#ffffff;
-$bulletSquare:#666666;
-$bulletSquare2:$grey;
-$bulletNumber2:#fffffd;
-$bulletLine:#d4d4d3;
+$btnStart:#ffe787;
+$btnEnd:#ffdb4b;
+$btnFontColor:#071C4D;
 
 
 
 
 /*--- Font Variables--*/
 
-$Oswald: Oswald, sans-serif;
-$Lato: Lato,sans-serif;
-$bodyFamily: 'Noto Sans', Arial, helvetica, sans-serif;
-$h1Family: 'Noto Sans', Arial, helvetica, sans-serif;
-$h2Family: 'Noto Sans', Arial, helvetica, sans-serif;
-$h3Family: 'Noto Sans', Arial, helvetica, sans-serif;
-
-
-$h1Color:#272727;
-$h2Color:#272727;
-$h3Color:#272727;
-$pColor:#595757;
-
-
-/*--- Other By section--*/
-$countdownColor:#00000f;
-$headerBtmBorder:transparent;
-$divider1: #47a562;
-
-
-/*--header--*/
-$headerBg:#fffff1;
-
-/*-----section 1---*/
-$section1Bg:#fffff2;
-
-$section1TextWrap:#ffffd2;
-
-/*--- Section 2--*/
-$section2Bg:#fffffe;
-$section2Border:#d4d4d4;
-
-
-/*-- Section 2 After --*/
-$section2AfterBg:#fffff6;
-
-/*--- Section 3--*/
-$Section3GridItemBorder:#ECF4FF;
-$section3GridBg:#DEEEFB;
-$section3Bg:#fffff3;
-
-/*--- Section 4--*/
-$section4Bg:#fffff4;
-$section4Border:#b1ccb6;
-
-/*--- Section 5--*/
-$section5Bg:#ECF4FE;
-$ribbon: #0E54A7;
-$ribbonAfter:#063165;
-$section5H1:#5790ed;
-
-
-/* --- Section 5 Ribbon 2 ----*/
-
-$freshcolor   : #47b372;
-$darkcolor    : #192238;
-
-$basefont : "Times New Roman", times, serif;
-$basefontsize : 24;
-$baselineheight : 1.5;
-$baseline-unit: $basefontsize * $baselineheight;
-$basefontpercent: $basefontsize/16 * 100;
-
-/*-- Section 6--*/
-$section6Bg:#fffff5;
-
-/*--- Section 7--*/
-$divider7: #C8DBEC;
-$section7Bg:#ECF4FB;
-$section7aBox:#fffffc;
-
-
-/*--- Section 8--*/
-$section8Bg:#fffff7;
-
-/*--- Section 9---*/
-$section9Bg:#fffff8;
-$mbg:#fffffb;
-
-/*--- Section 10 ---*/
-$section10Bg:#fffff9;
-
-/*--- Footer--*/
-$dividerFooter: #d4d4d6;
-$footerBg:#ffffd1;
-
-
-
-/*---- background colors applied ----*/
-
-.headerBg{
-  background-color: $headerBg;
-}
-.section1WrapBg{
-  background-color: $section1Bg;
-}
-#section1TextWrap{
-//background-color: $section1TextWrap;
-}
-.section4
-{
-  background-color: $section4Bg;
-}
-
-.section2{
-  background-color: $section2Bg;
-}
-.section2After{
-  background-color: $section2AfterBg;
-}
-.section3{
-  background-color: $section3Bg;
-}
-.section5{
-  background-color: $section5Bg;
-}
-.section6{
-  background-color: $section6Bg;
-}
-.section7{
-  background-color: $section7Bg;
-}
-.section8{
-  background-color: $section8Bg;
-}
-
-.section9{
-  background-color: $section9Bg;
-}
-.section10{
-  background-color: $section10Bg;
-}
-#footer{
-  background-color: $footerBg;
-}
+$bodyFamily:arial, san-serif;
+$blueLikeColor:#6D88C8;
 
 
 /* sitewide
@@ -201,11 +36,6 @@ $footerBg:#ffffd1;
 	box-sizing:         border-box;
 }
 
-@mixin box-sizing($box-model) {
-  -webkit-box-sizing: $box-model; // Safari <= 5
-     -moz-box-sizing: $box-model; // Firefox <= 19
-          box-sizing: $box-model;
-}
 
 .rowLg{
    width: 100%;
@@ -239,18 +69,12 @@ $footerBg:#ffffd1;
 	display: table;	
 }
 
-img {
-	max-width: 100%;
+img{
+  max-width: 100%;
 }
 
-.imgLeft{
-  float: left;
-  margin: 20px;
-}
-
-.imgRight{
-   float: right;
-  margin-left: 20px;
+.cb{
+  clear: both;
 }
 
 
@@ -267,1108 +91,221 @@ body {
 	color: #111111;
 	font-size: 18px;
 	font-family: $bodyFamily;
-	text-align: center;
+	text-align: left;
 	margin:auto;
 }
 
-.wrap {
-	max-width: 1100px;
-	margin: 0 auto;
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
 
-.large-font{
-	font-size: 1em;
+/*----Header---*/
+.headerBg{
+  background: linear-gradient($headerBgStart, $headerBgEnd);
+    padding-top: 3%;
+  padding-bottom: 1%;
+  //padding-left: 5%;
+  //padding-right: 5%;
 }
 
-.mg-btm-xs{
-  margin-bottom:1.5rem;
-}
-
-.mg-btm-sm{
-  margin-bottom:2rem;
-}
-.mg-btm-sM{
-  margin-bottom: 3.5rem;
-}
-
-.mg-btm-md{
-  margin-bottom:5rem;
-}
-.mg-top-xs{
-  margin-top:1.5rem;
-}
-.mg-top-sm{
-  margin-top:2rem;
-}
-
-.mg-top-sM{
-  margin-top: 3.5rem;
-}
-.mg-top-md{
-  margin-top:5rem;
-}
-.mg-left-sm{
-  margin-left:2rem;
-}
-
-.pd-top-sm{
-   padding-top:2rem;
-}
-
-.pd-btm-sm{
-   padding-bottom:2rem;
-}
-
-.none{
-	float: none;
-}
-
-.cb{
-  clear: both;
-}
-
-.zplus{
-	z-index: 100;
-	height: inherit;
-}
-
-.sectionWrap
-  {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  border-bottom: 1px solid
-}
-
-
-.posRelative{
-  position: relative;
-}
-
-/* colors
----------------------------------------------------------------------------------------------------- */
-
-.grey{
-	background-color: $grey;
-}
-
-.yellow{
-	background-color: $yellow;
-}
-
-.lightblue{
-	background-color: $lightblue;
-}
-.greyBlue{
-  background-color: $greyBlue;
-}
-.white{
-	background-color: $white;
-}
-.box {
-  box-shadow: 0 0 15px $box;
-}
-.black{
-	background-color: $black;
-}
-
-.white-gradient{
-background-image: linear-gradient(to top, rgba(0, 0, 0, 0.001), #ffffff);
-}
-
-/* font styles
----------------------------------------------------------------------------------------------------- */
-
-
-h1{
-	font-family: $h1Family;
-	font-size: calc(36px);
-  font-weight: 400;
-	color:$h1Color;
-  line-height: 40px;
-}
-
-h2{
-	color:$h2Color;
-  font-family: $h2Family;
-}
-h3{
-
-  color:$h3Color;
-  font-family: $h3Family;
-}
-
-p{
-  text-align: left;
-  font-size: calc(18px);
-  color: $pColor;
-}
-
-.textBlack{
-color: $black;
-
-}
-.textGrey{
-	color: $grey;
-	&:hover{
-		color: $grey-hover;
-	}
-}
-.text-left{
-	text-align: left;
-}
-
-.firstletter { float: left; color: #000000; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }
-
-
-/* Buttons & Optin
----------------------------------------------------------------------------------------------------- */
-.orangeBtn{
-  
-  background-color: $buttonColor2;
-  font-size: calc(20px);
-  border-bottom: 6px solid $buttonColor2Border;
-  font-weight: 700;
-  padding-left: 10px;
-  padding-right: 10px;
-  &:hover{
-    background-color: $buttonColor2Hover;
-    border-bottom: 6px solid $buttonColor2BorderHover;
-    //font-size: calc(35px);
-
-  }
-}
-.optinWrap{
-  background-color: $optinWrapBg;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: 1px solid $optinWrapBorder;
+.headerInner{
+  display: flex;
+  justify-content:center;
 
 }
 
-.optinLeft{
-  float: none;
-  padding-left: 0.9375rem;
-  //width: 100%;
-  margin:auto;
-
-  img{
-    margin-right: 5px;
-    width: 20%;
-  }
-}
-
-.optinRight{
-  float: none;
-  padding-right: 0.9375rem;
-  //width: 100%;
-  margin:auto;
-}
-
-.optinRightText{
-  float: none;
-  color: #b5b4b4;
-  font-size: 18px;
-  font-weight: 700;
-  font-family: 'Noto Sans', sans-serif;
-  padding-left: 15px;
-  padding-top: 10px;
-}
-
-/* Header
----------------------------------------------------------------------------------------------------- */
-
-.header{
-  margin-top: calc(15px);
-  margin-bottom: calc(15px);
-}
-	
-#headerRight a{
-  color: black;
-  font-family: $bodyFamily;
-  text-align: right;
-  &:hover{
-    color:black;
-  }
-}  
-
-
-
-/* ------------------ Countdown ------------------ */
-.countdown-container {display: inline-block;margin: auto;position: relative;}
-.countdown-container ul.countdown {padding: 0;margin: 0;overflow: auto;position: relative;}
-.countdown-container ul.countdown li {float: left;display: inline-block;background:none;padding:0;text-align: center;margin-right: 5px;overflow: hidden;}
-.countdown-container ul.countdown li:last-child{margin-right:0;}
-.countdown-container ul.countdown li span { color:$countdownColor; font-weight: 700;font-size: 36px;line-height: 36px;text-align: center;letter-spacing: 3px;padding-left: 5px; margin-top: 0; padding-top: 0;}
-.countdown-container ul.countdown li p.timeRefDays,
-.countdown-container ul.countdown li p.timeRefHours,
-.countdown-container ul.countdown li p.timeRefMinutes,
-.countdown-container ul.countdown li p.timeRefSeconds {display: inline-block;font-weight: 400;
-  text-transform: uppercase;font-size: 12px;text-align: center;
-  margin: 2px auto ;letter-spacing: 0;width: 100%;line-height: 17px;text-align:center;color:$countdownColor; 
-}
-
-
-
-
-
-
-
-
-/* Section1
----------------------------------------------------------------------------------------------------- */
-.section1{
-  background: url(../img/vidBg.jpg) center center no-repeat;
-  background-size: cover;
-}
-
-#section1Headline{
-    h1{
-     color:white; 
-    }
+.logo{
   
 }
-
-.divider{
-
-  border-bottom-style: solid;
-   
-    &:before, &:after {
-      content: " ";
-    position: absolute;
-    height: 0;
-    width: 0;
-    border: solid transparent;
-    pointer-events: none;
-    top: inherit;
-    left: 40%;
-    }
-
-}
-.section1Divider{
-  border-bottom-color: $divider1;
-  border-bottom-width: calc(10px);
-  
-    &:before {
-      
-       border-top: calc(40px) solid $divider1;
-      border-left-width: calc(40px);
-      border-right-width: calc(40px);
-    }
-
-  
-    &:after {
-    
-    border-top: calc(40px) solid $headerBg;
-    border-left-width: calc(40px);
-    border-right-width: calc(40px);
-    margin-top: -12px;
-    
-    }
-  }
-
-
-
-
-
-
-/* Section2
----------------------------------------------------------------------------------------------------- */
-
-#section2 h2{
-  font-size: 2.2rem;
-  text-align: left;
-}
-
-.section2Wrap{
-  //background: $section2Bg;
-  border-bottom-color: transparent; ;
-  //border-top: 1px solid $section2Border;
-}
-
-#section2 { 
-  .testi p {
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    font-size: 12px;
-    text-align: center
-    }
-
-  blockquote {
-    border-left: 0;
-    //color: #999;
-    font-size: 15px;
-    //font-style: italic;
-    line-height: 1.5em;
-    margin: 2em auto 0;
-    &:before{
-      content: "";
-    width: 80px;
-    height: 1px;
-    background: #d5d5d5;
-    display: block;
-    margin: auto;
-    position: relative;
-    top: -22px;
-    }
-    &:before, &:after {
-
-      content: "";
-      }
-    }
-}
-
-#section2Text p{
-  line-height: 22px;
+.book{
+  margin-left: 5%
 }
 
 
-#section2AfterDivider1{
-  color: #000002;
-}
-
-
-#section2AfterDivider2{
-  color: #000003;
-}
-
-/* Section3
----------------------------------------------------------------------------------------------------- */
-
-
-.section3cRight{
-  margin-bottom: 2rem;
-  margin-top:5rem;
-}
-
-/*--- Remove for now 
-.flexbox{
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    
-}
-
-----*/
-
-
-
-.section3BlockGrid{
-
-  @include block-grid(
-    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
-    // Available options: 1-12 by default, and false.
-    $per-row: 1,
-
-    // This controls how much space is between each item in the block grid.
-    // Use a variable or any pixel or em values.
-    //$spacing: $block-grid-default-spacing,
-      $spacing: 10px,
-
-    // This controls whether or not base styles come through, set to false to leave out.
-    $base-style: true
-    
-  );
-
-    
-
-  .section3GridItem{
-    background-color: $section3GridBg;
-
-    p{
-      margin:0;
-      padding:0;
-    }
-  }
-
-  h2{
-    font-size: calc(27px);
-  }
-
-}
-
-
-
-
-
-.section3GridItem img
-{
- padding-top:5px;
- padding-bottom:5px;
-  }
-
-
-
-/* Section4
----------------------------------------------------------------------------------------------------- */
-
-
-.section4Wrap{
-  background: $section4Bg;
-  border-bottom-color: $section4Border;
-  //border-top: 1px solid $section4Border;
-}
-
-.grayscale {
-  filter: grayscale(100%);
-}
-
-.section4bBlockGrid {
- @include block-grid(
-    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
-    // Available options: 1-12 by default, and false.
-    $per-row: 3,
-
-    // This controls how much space is between each item in the block grid.
-    // Use a variable or any pixel or em values.
-    $spacing: 10px,
-
-    // This controls whether or not base styles come through, set to false to leave out.
-    $base-style: true
-  );
-}
-
-
-#section4bGrid ul li img{
-  max-height: 75px;
-}
-
-.section4Divider{
-  border-bottom-color: $section4Border;
-  border-bottom-width: calc(10px);
-  
-    &:before {
-      
-      border-top: calc(40px) solid $section4Border;
-      border-left-width: calc(40px);
-      border-right-width: calc(40px);
-    }
-
-  
-    &:after {
-    
-    border-top: calc(40px) solid $section4Bg;
-    border-left-width: calc(40px);
-    border-right-width: calc(40px);
-    margin-top: -12px;
-    
-    }
-  }
-
-
-/* Section5
----------------------------------------------------------------------------------------------------- */
-.section5Bg{
-  background-color: $section5Bg;
-}
-
-.section5Item{
-
-  h1{
-    color:$section5H1;
-  }
-
-
-}
-
-
-.ribbon-wrapper {
-  //overflow: hidden;
-  position: relative;
- 
-  //right: calc(-15px);
-  float: right;
-  margin-bottom: 22px;
-  //margin-top: -22px;
-  padding-top: 22px;
-  width: 100%;
-  white-space: nowrap;
-}
-
-.ribbon-container {
-  color: #fffffa;
-  clear: both;
-  font-size: 30px;
-  font-weight: 700;
-  background: $ribbon;
-  //height: calc(55px);
-  padding: 7px 22px;
-  position: relative;
-  float: right;
-  max-width: 100%;
-  width: 100%;
-  white-space: normal;
- 
-/*
-  &:before{
-
-  content: "";
-  position: absolute;
-  bottom: 0;
-  border: 27px solid $ribbon;
-  height: 0;
-  z-index: 5;
-  left: -36px;
-  border-left-width: 15px;
-  border-left-color: transparent;
-  padding: 1px 0 0 0;
-  }
-
-  &:after{
-
-  content: '';
-  position: absolute;
-  right: 0;
-  top: -20px;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  font: 0/0 a;
-  color: transparent;
-  text-decoration: none;
-  border-width: 20px 0 0 21px;
-  border-color: transparent $ribbonAfter;
-  border-style: dashed solid;
-  }
-*/
-
-}
-
-p.ribbon {
-  color: #fffffa;
-  clear: both;
-  font-size: calc(24px);
-  font-weight: 700;
-  background: $ribbon;
-  line-height: inherit;
+/*-------- Content Sections -----*/
+.contentWrap{
+    width: 90%;
   margin: auto;
-  overflow: hidden;
-  width: 100%;
-  max-width: 100%;
-  white-space: nomral;
-  text-overflow: ellipsis;
+  padding-top: 2%;
+  max-width: 1200px;
+}
+
+/*----Content Left ----*/
+
+.videoWrap{
   text-align: center;
 }
 
-
-
-
-/* --- Ribbon 2 ----*/
-
-
-
-
-
-.rowRibbon {
-  display: table;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-}
-
-.blockRibbon {
-  display: table-cell;
-  width: 100%;
-  vertical-align: middle;
+.quoteWrap{
   position: relative;
-}
-
-.rowRibbon h1 {
-  position: relative;
-  display: inline-block;
-  font-family: $basefont;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  white-space: nowrap;
-  text-align: center;
-  font-size: 1em;
-  text-transform: uppercase;
-
-  &:after,
-  &:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    bottom: -.5em;
-    width: 1em;
-    height: 100%;
-    background-color: lighten($freshcolor,10);
-    pointer-events:none;
-  }
-
-  &:after {
-    right: -.57em;
-    z-index: -1;
-  }
-
-  &:before {
-    bottom: auto;
-    top: -.5em;
-    left: -.57em;
-    z-index: -1;
-  }
-
-  a {
-    display: inline-block;
-    position: relative;
-    padding: .15em .75em;
-    text-decoration: none;
-    color: darken($darkcolor,0);
-    background-color: lighten($freshcolor,20);
-
-
-    &:after,
-    &:before {
-      content: " ";
-      display: block;
-      position: absolute;
-      width: 0;
-      height: 0;
-      bottom: -.5em;
-      left: -.05em;
-      pointer-events: none;
-      -webkit-mask: none;
-    }
-
-    &:before {
-      bottom: auto;
-      top: -.5em;
-      border-bottom: .5em solid darken($freshcolor,10);
-      border-left: .5em solid transparent;
-    }
-
-    &:after {
-      left:  auto;
-      right: -.05em;
-      border-top: .5em solid darken($freshcolor,10);
-      border-right: .5em solid transparent;
-    }
-  }
-
-}
-
-
-
-
-
-
-
-/* Section6
----------------------------------------------------------------------------------------------------- */
-
-
-ol {
-    counter-reset: li; /* Initiate a counter */
-    list-style: none; /* Remove default numbering */
-    *list-style: decimal; /* Keep using default numbering for IE6/7 */
-    
-    padding: 0;
-    
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-}
-
-ol ol {
-    margin: 0 0 0 2em; /* Add some left margin for inner lists */
-}
-
-.rectangle-list2 :last-child:after{
-     background: transparent;
-     &:hover{
-      background: transparent;
-      }
-}
-
-.rectangle-list2 li{
-    position: relative;
-    display: block;
-    padding: 0em 0em 0em 3em;
-    //*padding: .4em;
-    margin-bottom: 20px;
-    
-    color: $pColor;
-    font-size: calc(20px);
-    text-decoration: none;
-    transition: none;  
-    
-    //height:100px;
-    text-align: left;
-    z-index: 0;
-}
-
-.rectangle-list2 li:hover{
-    
-
-}   
-
-.rectangle-list2 li:before{
-    content: counter(li);
-    counter-increment: li;
-    position: absolute; 
-    left: calc(0px);
-    top: 0;
-    margin-top: 0em;
-    background: $bulletSquare2;
-    //height: 2em;
-    width: 2em;
-    line-height: 2em;
-    text-align: center;
-    font-weight: bold;
-    color: $bulletNumber2;
-    font-size: calc(22px);
-    
-}
-
-.rectangle-list2 li:after{
-   content: "";
-  display: block;
-  background-color: $bulletLine;
-  height: 100%;
-  position: absolute;
-  top: 2em;
-  left: calc(21px);
-  width: 2px;  
-  z-index: -1;      
-}
-
-
-
-/* Section 7
----------------------------------------------------------------------------------------------------- */
-
-.section7a{
-  margin-top:calc(30px);
-  margin-bottom: calc(30px);
-  padding-top: calc(30px);
-  padding-bottom: calc(30px);
-  background-color: $section7aBox;
-
-}
-
-
-
-
-.section7BlockGrid1{
-
-  @include block-grid(
-    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
-    // Available options: 1-12 by default, and false.
-    $per-row: 2,
-
-    // This controls how much space is between each item in the block grid.
-    // Use a variable or any pixel or em values.
-    $spacing: $block-grid-default-spacing,
-
-    // This controls whether or not base styles come through, set to false to leave out.
-    $base-style: true
-  );
-}
-
-
-.section7BlockGrid2{
-
-  @include block-grid(
-    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
-    // Available options: 1-12 by default, and false.
-    $per-row: 1,
-
-    // This controls how much space is between each item in the block grid.
-    // Use a variable or any pixel or em values.
-    $spacing: $block-grid-default-spacing,
-
-    // This controls whether or not base styles come through, set to false to leave out.
-    $base-style: true
-  );
-}
-
-.section7BlockGrid3{
-  @include block-grid(
-    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
-    // Available options: 1-12 by default, and false.
-    $per-row: 1,
-
-    // This controls how much space is between each item in the block grid.
-    // Use a variable or any pixel or em values.
-    $spacing: 10px,
-
-    // This controls whether or not base styles come through, set to false to leave out.
-    $base-style: true
-  );
-    margin-bottom: calc(30px);
-    margin-top: calc(30px);
-}
-.section7BlockGrid4{
-  @include block-grid(
-    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
-    // Available options: 1-12 by default, and false.
-    $per-row: 1,
-
-    // This controls how much space is between each item in the block grid.
-    // Use a variable or any pixel or em values.
-    $spacing: 10px,
-
-    // This controls whether or not base styles come through, set to false to leave out.
-    $base-style: true
-  );
-
-  margin-bottom: calc(30px);
-  margin-top: calc(30px);
-}
-.section7BlockGrid5{
-  @include block-grid(
-    // This controls how many elements will be on each row of the block grid. Set this to whatever number you need, up to the max allowed in the variable.
-    // Available options: 1-12 by default, and false.
-    $per-row: 1,
-
-    // This controls how much space is between each item in the block grid.
-    // Use a variable or any pixel or em values.
-    $spacing: $block-grid-default-spacing,
-
-    // This controls whether or not base styles come through, set to false to leave out.
-    $base-style: true
-  );
-
-  margin-bottom: calc(30px);
-  margin-top: calc(30px);
-}
-
-/*--Both Grids Section7  --*/
-
-.section7Divider{
-  border-bottom-color: $divider7;
-  border-bottom-width: calc(10px);
-  
-    &:before {
-      
-       border-top: calc(40px) solid $divider7;
-      border-left-width: calc(40px);
-      border-right-width: calc(40px);
-    }
-
-  
-    &:after {
-    
-    border-top: calc(40px) solid $section7Bg;
-    border-left-width: calc(40px);
-    border-right-width: calc(40px);
-    margin-top: -12px;
-    
-    }
-  }
-
-.section7Bg{
-  background-color: $section7Bg;
-}
-
-.section7aGrid{
-
-}
-
-/*--Block Grid 1 --*/
-.testi>img  {
-  border-radius: 100%;
-  margin: 0 auto 1.25em;
-  width: 120px;
-  height: 120px;
-}
-
-
-
-#section7 .testi p {
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  font-size: 12px;
-  text-align: center
-}
-
-
-
-
-#section7 .section7BlockGrid1 {  
-
-  blockquote {
-    border-left: 0;
-    //color: #999;
-    font-size: 15px;
-    //font-style: italic;
-    line-height: 1.5em;
-    margin: 2em auto 0;
-    &:before{
-      content: "";
-    width: 80px;
-    height: 1px;
-    background: #d5d5d5;
-    display: block;
-    margin: auto;
-    position: relative;
-    top: -22px;
-    }
-    &:before, &:after {
-
-    content: "";
-    }
-  }
-}
-
-/*--Block Grid 2 --*/
-
-.section7BlockGrid2{
-  margin-bottom: calc(30px);
-  margin-top: calc(30px);
-  //width: 80%;
+  background-color: $quoteBg;
+   margin-top: 4%;
+   width: 90%;
   margin-left: auto;
   margin-right: auto;
-
-    blockquote{
-    border-left: 0;
-  }
-
-  li:last-child{
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  }
 }
 
-.testi .section7BlockGrid2Img>img{
-  border-radius: 100%;
-  margin: 0 auto 1.25em;
-  width: 120px;
-  height: 120px;
-}
+.quote{
+  width: 90%;
+  margin:auto;
+  padding-top: 3%;
+  padding-bottom: 10%;
+
+  font-size: 19px;
+  line-height: 22px;
 
 
-
-/*--Block Grid 3 --*/
-
-
-
-/* Section 8
----------------------------------------------------------------------------------------------------- */
-.report1{
-  //height: 200px;
-}
-
-.priceList ul{
-  list-style: none;
-  text-align: left;
-  font-size: calc(18px);
-  color: $pColor;
-  padding-left: 0;
-  margin-left: 0;
-  margin-top: calc(20px);
-  li{
-      
-      position: relative;
-      display: block;
-      padding-left: calc(50px);
-      margin-bottom: 20px;
-     
-
-      &:before{
-        content: "\003e \003e";
-        color:#ed6409;
-        position: absolute;
-        left: calc(0px);
-        top: -5px;
-        font-size: calc(25px);
-      }
-
-      
-      
-    }
-
-  }
-
-  /* Section 9
----------------------------------------------------------------------------------------------------- */
-
-
-.mbg{
-  box-shadow: 0 0 15px $box;
-  padding-top: calc(20px);
-  padding-bottom: calc(20px);
-  margin-bottom: calc(40px);
-  margin-top:calc(40px);
-  background-color: $mbg;
-}
-
-.mgbText
-  {
-  
-  }
- 
-  .mbgText1{
-    font-size: 30px;
-   
-  }
-
- .mbgText3{
-  font-size: 30px;
-  color:#0E54A5;
-  }
-
-.mgbImg{
-
-}
-
-/* Footer
----------------------------------------------------------------------------------------------------- */
-
-.footerDivider{
-  border-bottom-color: $dividerFooter;
-  border-bottom-width: calc(10px);
-  
-    &:before {
-      
-       border-bottom: calc(40px) solid white;
-      border-left-width: calc(40px);
-      border-right-width: calc(40px);
-      margin-top:-40px;
-    }
-
-  
-    &:after {
-    
-    border-bottom: calc(40px) solid $dividerFooter;
-    border-left-width: calc(40px);
-    border-right-width: calc(40px);
-    margin-top: -40px;
+  &:before, {
+    content: " ";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  pointer-events: none;
+  top: -15px;
+  left: 5%;
+  border-bottom: calc(15px) solid #DFDEE1;
+  border-left-width: calc(15px);
+  border-right-width: calc(15px);
     
     }
+}
+
+.socialWrap{
+  padding-top:30px;
+}
+
+.blueLike{
+color:$blueLikeColor;
+}
+
+.fbButtons{
+  width: 40%;
+  display: flex;
+  align-items:flex-end;
+
+  img{
+    max-height: 21px;
+  } 
+}
+
+.fbLike{
+  margin-right: 5px;
+}
+
+.fbShareWrap{
+  margin-bottom: 3px;
+}
+
+.fbComments{
+  padding-top: 5px;
+}
+
+
+/*--- Content Right--*/
+.contentRight{
+  background-color: $contentRightBg;
+  color:$contentRightTextColor;
+  border-radius: 5px;
+
+  p{
+    color:$contentRightTextColor;
+    font-size: 20px;
+
+  }
+  h1{
+     color:$contentRightTextColor;
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+.rightCentering{
+  width: 90%;
+  margin:auto;
+  padding-top: 20px;
+}
+
+.rightButtons{
+  margin-bottom: 10%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.kindleBtnWrap{
+  max-width: 300px;
+
+}
+
+.nookBtnWrap{
+  max-width: 300px;
+
+}
+
+.contentRightList{
+  padding-left: 0px;
+}
+.giftsBtnWrap{
+  margin:50px auto 50px auto;
+  text-align: center;
+}
+.giftsBtn{
+  background: linear-gradient($btnStart,$btnEnd);
+  color:$btnFontColor;
+  font-family: Tahoma, san-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: #8E8E8E 2px 2px 1px 0px;
+  border-radius: 5px;
+  display: inline-block;
+  
+  &:hover{
+    text-decoration: none;
   }
 
-.footer{
- margin-top:2rem;
- margin-bottom: 8rem;
- margin-left: 2rem;
- color: $pColor;
+}
+
+.noSpam{
+  
+  font-size: 15px !important;
+  padding-bottom: 20px;
+  width: 90%;
+  margin: auto;
 }
 
 
-.site-footer {	
-	color: #999999;
-	font-size: 18px;
-	padding: 30px 10px 26px;
+/*-----footer------*/
+.footerBg{
+  background: linear-gradient($headerBgStart, $headerBgEnd);
+    padding-top: 3%;
+  padding-bottom: 1%;
+  margin-top: 70px;
+  
+
+  p{
+    color:#ffffff;
+  }
+
 }
 
-.site-footer a {
-	color: #999999;
-	text-decoration: none;
-	font-size: calc(10px)
+.footerInner{
+  display: flex;
+  justify-content:center;
+  width: 90%;
+  margin: auto;
+
 }
-
-.site-footer a:hover {
-	text-decoration: underline;
+.bird{
+  height: 50px;
+  margin-right: 10px;
 }
-
-
-
-
-
-
-
-
-
 
 /*Style.scss*/
 

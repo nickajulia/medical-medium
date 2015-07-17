@@ -1,19 +1,61 @@
 {
-	"id": "Get the Guide",
-	"name": "Get the Guide", 
+	"id": "Medical Medium",
+	"name": "Medical Medium", 
 	"mobile": true, 
-	"notes": "version 1.101", 
+	"notes": "version 1.103", 
 	"syntax": 4, 
-	"version": 1.101,
+	"version": 1.103,
 	"style": {
 		"html": "",
 		"replacements": [
 
         {
               "type": "color",
-              "name": "Header Background Overlay Color",
-              "find": "#00000A"
+              "name": "Header Background Top",
+              "find": "#061B4D"
+          },
+            {
+              "type": "color",
+              "name": "Header Background Bottom",
+              "find": "#283D7A"
+          },
+           {
+              "type": "color",
+              "name": "Right Column Background",
+              "find": "#DFDEE2"
+          },
+
+           {
+              "type": "color",
+              "name": "Quote Background",
+              "find": "#DFDEE1"
+          },
+          {
+              "type": "color",
+              "name": "Fb Like Color",
+              "find": "#6D88C8"
+          },
+          {
+              "type": "color",
+              "name": "Gifts Button Top",
+              "find": "#ffe787"
+          },
+          {
+              "type": "color",
+              "name": "Gifts Button Bottom",
+              "find": "#ffdb4b"
+          },
+           {
+              "type": "color",
+              "name": "Gifts Btn text Color",
+              "find": "#071C4D"
+          },
+          {
+              "type": "font-family",
+              "name": "Gifts Btn Font",
+              "find": "Tahoma"
           }
+
 
 		                ]
 	},
@@ -35,7 +77,7 @@
                 "border-style": "solid;",
                 "font-family": "Helvetica, Arial, sans-serif",
                 "font-size": "14pt;",
-                "letter-spacing": "-0.1em;"
+                "letter-spacing": "0em;"
             },
             "html": "Free Instant Access &raquo;"
         },
@@ -43,38 +85,133 @@
             "css": {
                 "font-family": "Helvetica, Arial, sans-serif",
                 "font-size": "12pt;",
-                "letter-spacing": "-0.1em;"
+                "letter-spacing": "0em;"
             },
             "html": "<div><i class=\"icon-lock\"></i>We hate SPAM and promise to keep your email address safe. </div>"
         }
     },
+
+
+     "variables": {
+      "facebookurl": {
+          "variable": "facebookurl",
+          "default": "",
+          "name": "The URL to share on Facebook. Leave blank to share the current page."
+      }
+  },
+
+
+
 	"elements": [
 		
         {
-      "id": "site-header",
+      "id": "header",
       "name": "Header Container",
       "type": "container"
         },
-       
-      
+        {
+      "id": "contentLeft",
+      "name": "Left Column Container",
+      "type": "container"
+        },
+         {
+      "id": "videoWrap",
+      "name": "video Container",
+      "type": "container"
+        },
+        {
+      "id": "quoteWrap",
+      "name": "quote Container",
+      "type": "container"
+        },
+       {
+      "id": "socialWrap",
+      "name": "social Container",
+      "type": "container"
+        },
+        {
+      "id": "contentRight",
+      "name": "Right Column Container",
+      "type": "container"
+        },
+      {
+      "id": "rightButtons",
+      "name": "Right Buttons Container",
+      "type": "container"
+        },
+        {
+      "id": "footer",
+      "name": "footer Container",
+      "type": "container"
+        },
 
 
 
 
         {
-      "id": "heroTitle",
-      "name": "Hero Title",
+      "id": "quote",
+      "name": "quote text",
       "type": "text"
         },
-    
+          {
+      "id": "socialText",
+      "name": "Social text",
+      "type": "text"
+        },
+         {
+      "id": "rightHeadline",
+      "name": "Right col Headline",
+      "type": "text"
+        },
+           {
+      "id": "step1",
+      "name": "step1 Text",
+      "type": "text"
+        },
+        {
+      "id": "step2",
+      "name": "step2 Text",
+      "type": "text"
+        },
+
+         {
+      "id": "contentRightList",
+      "name": "Bullet List",
+      "type": "text"
+        },
+     {
+      "id": "rightBullet1",
+      "name": "Bullet 1",
+      "type": "text"
+        },
+        {
+      "id": "rightBullet2",
+      "name": "Bullet 2",
+      "type": "text"
+        },
+        {
+      "id": "rightBullet3",
+      "name": "Bullet 3",
+      "type": "text"
+        },
+         {
+      "id": "noSpam",
+      "name": "no Spam text",
+      "type": "text"
+        },
+         {
+      "id": "copyright",
+      "name": "copyright text",
+      "type": "text"
+        },
      
 
 
 
         
         {
-      "id": "footerLink5",
-      "name": "Footer Link5",
+      "id": "giftsBtn",
+      "name": "Get My Gifts Button",
       "type": "link"
         },
 
@@ -83,20 +220,57 @@
 
 
          {
-      "id": "header-bg",
-      "name": "Header Background",
+      "id": "bookImg",
+      "name": "Book Img",
+      "type": "image"
+        },
+        {
+      "id": "bird",
+      "name": "footer Bird Image",
       "type": "image"
         },
            
 
+         {
+      "id": "logoLink",
+      "name": "Logo",
+      "type": "image-link"
+        },
+         {
+      "id": "kindleBtn",
+      "name": "Kindle Btn",
+      "type": "image-link"
+        },
+        {
+      "id": "nookBtn",
+      "name": "Nook Btn",
+      "type": "image-link"
+        },
 
-
+        {
+        "type": "facebook-button",
+      "id": "fbLike",
+      "name": "Facebook Like Button"
+      },
+      {
+      "type": "dynamic",
+      "id": "fbShare",
+      "name": "Facebook Share Button",
+        "data": {
+            "variables": ["facebookurl"]
+        }
+      },
+      {
+      "type": "facebook-comments",
+      "id": "fbComments",
+      "name": "Facebook Comments"
+      },
 
 
 
         {
-      "id": "section1LeftVideo",
-      "name": "Section 1 Video",
+      "id": "video",
+      "name": "The video",
       "type": "video"
         }
 

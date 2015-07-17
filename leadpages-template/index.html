@@ -1,26 +1,125 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Blank Project</title>
+		<title>Medical Medium - Anthony William</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
 		
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 		<link href='https://fonts.googleapis.com/css?family=Merriweather:100,300,400italic,700' rel='stylesheet' type='text/css'>
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/html5shiv.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js"></script>
 		
 		
 	</head>
-	<body>
-		<div id="header">
+	<body class="container-fluid">
+		<div id="header" class="row headerBg" >
 			
-		</div>
+			<div class="col-md-12 headerInner">
+				<div class="logo">
+					<a href="#" id="logoLink">
+						<img src="img/logo.png" alt="" >
+					</a>
+				</div>
+				<div class="book">
+					<img src="img/book1.png" id="bookImg">
+				</div>
+			</div>
+			
+			
+		</div> <!--Header-->
+
+		<div id="contentWrap" class=" row contentWrap">
+			<div id="contentLeft" class=" col-md-7 contentLeft">
+				<div id="videoWrap" class="videoWrap">
+					<div id="video">
+					<img src="img/video.png" alt="">
+					</div>
+				</div><!--Video wrap-->	
+				<div id="quoteWrap" class="quoteWrap">
+					<div id="quote" class="quote">
+						<p>
+							<strong>"Anthony is not only a warm, compassionate healer, he is also authentic and accurate, with God-given skills. He has been a total blessing in my life."</strong>
+
+						</p>
+						<p><strong>Naomi Campbell, model, actress, activist</strong></p>
+					</div>
+				</div>	<!--Quote Wrap-->
+				<div id="socialWrap" class="socialWrap">
+					<p id="socialText">Hit the <span class="blueLike">"Like"</span> button and leave a comment below:</p>
+					<div id="fbButtons" class="fbButtons ">
+						<div id="fbLike" class="fbLike">
+						    <img src="img/fblike.png" alt="" />
+						</div>
+						<div id="fbShareWrap" class="fbShareWrap">
+							<a href="" id="fbShare">
+							    <img src="img/fbshare.png" alt="" />
+							</a>
+						</div>
+					</div>
+					<div id="fbComments" class="fbComments">
+						Facebook Comments Here
+					</div>
+				</div>
 
 
-		<div id="footer">
+				
+			</div><!--Content Left-->
+			<div id="contentRight" class="col-md-5 contentRight">
+				<div class="rightCentering">
+					<h1 id="rightHeadline">Get Your MEDICAL MEDIUM book and receive $2,191 in Valuable Bonuses:</h1>
+
+					<p id="step1">1. Order via one of the buttons below:</p>
+					<div id="rightButtons" class="rightButtons">
+						<div class="kindleBtnWrap">
+							<a href="" id="kindleBtn" class="kindleBtn">
+								<img src="img/kindle.png" alt="" id="kindleImg">
+							</a>
+						</div>
+						<div class="nookBtnWrap">
+							<a href="" id="nookBtn" class="nookBtn">
+								<img src="img/nook.png" alt="" id="nookImg">
+							</a>
+						</div>
+					</div><!--RightButtons-->
+					<p id="step2">2. Click <strong>“GET MY GIFTS”</strong>, enter your info and you’ll receive...
+					</p>
+
+					<ul id="contentRightList" class="contentRightList">
+						<li id="rightBullet1">
+							<p>	The <strong>Medical Medium Audio Program</strong> by Anthony William. Anthony will revealhighly advanced and accurate healingstrategies that have helped peoplerecover from all kinds of illness, heal theirsouls, and restore faith in their ability toheal, so they can live the lives they weremeant to live…and much more! ($197)
+							</p>
+						</li>
+						<li id="rightBullet2">
+							<p><strong>The Medical Medium Book Club / Private Facebook Group Mastermind</strong>
+							(value $997). Seven Weeks of “AskAnthony Anything” and a VIP MedicalMedium Community applying theprinciples that have helped tens ofthousands people become healthy,eliminate disease, heal their soul,relationships and much more!
+							</p>
+						</li>
+						<li id="rightBullet3">
+							<p>The <strong>Medical Medium Live Course</strong>. Anin-depth, one-of-a-kind course on how touse extraordinarily accurate and powerfulhealing strategies from Medical MediumAnthony William to help you recover andimprove your health right now. TheMedical Medium Course (includesMedical Medium journal). Filled withunique tools and strategies not availableanywhere else and decades ahead ofscientific discovery — an absolute mustfor your personal health library! ($997)
+							</p>
+						</li>
+					</ul>
+					
+					</div><!--Right Centering-->
+					
+					<div id="giftsBtnWrap" class="giftsBtnWrap">
+						<a href="#/optin" id="giftsBtn" class="giftsBtn">Get My Gifts</a>
+					</div>
+					<p id="noSpam" class="noSpam">Your information is secure and will not be rented or shared, ever.</p>
+				
+			</div><!--Content right -->
+		</div><!-- Content Wrap-->
+
+
+		<div id="footer" class="footerBg row">
+			<div id="footerInner" class="footerInner">
+				<img src="img/bird.png" id="bird" class="bird">
+				<p id="copyright">Copyright © 2015 Anthony William, Inc. Medical Medium® registered trademark is owned by Anthony William, Inc. All Rights Reserved</p>
+			</div>
 			
 		</div>
 
